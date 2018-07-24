@@ -86,11 +86,11 @@ def encoded_00_prep_ftv2(quantump, qri=0):
     qc_ftv2.h(qrs[qri][3])
     qc_ftv2.cx(qrs[qri][2], qrs[qri][1])
     qc_ftv2.cx(qrs[qri][3], qrs[qri][4])
-    qc_ftv2.h(qrs[qri][4])
+    # qc_ftv2.h(qrs[qri][4])
     qc_ftv2.extend(swap_circuit([2, 4], quantump))
     qc_ftv2.cx(qrs[qri][2], qrs[qri][0])
     qc_ftv2.cx(qrs[qri][1], qrs[qri][0])
-    qc_ftv2.h(qrs[qri][4])
+    # qc_ftv2.h(qrs[qri][4])
     return qc_ftv2
 
 def encoded_0p_prep(quantump, qri=0):
